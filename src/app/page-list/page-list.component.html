@@ -1,4 +1,4 @@
-<table class="table is-striped">
+<table class="box table is-striped is-not-bordered">
     <thead>
         <tr>
             <th>Title</th>
@@ -8,9 +8,14 @@
     </thead>
     <tbody>
         <tr *ngFor="let page of pages">
-            <td>{{ page.title }}</td>
+            <a 
+                target="_blank"
+                [href]="'https://en.wikipedia.org?curid=' + page.pageid">
+                <td>{{ page.title }}</td>
+            </a>
+            
             <td>{{ page.wordcount }}</td>
-            <td>{{ page.snippet }}</td>
+            <td [innerHtml]="page.snippet"></td>
         </tr>
     </tbody>
 </table>

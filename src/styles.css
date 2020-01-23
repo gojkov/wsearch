@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bulma/css/bulma.css';
+
+.searchmatch:first-of-type {
+    font-weight: 700;
+}
+
+.table {
+    background-color: ivory;
+}
+.table td {
+    border: none;
+}
+
+body {
+    background-color: ivory;
+}
