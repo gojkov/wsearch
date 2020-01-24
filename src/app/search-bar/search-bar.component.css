@@ -3,6 +3,7 @@
     color: ivory;
 }
 
-div {
+div.box {
     background-color: ivory;
+    margin-top: 1rem;
 }
